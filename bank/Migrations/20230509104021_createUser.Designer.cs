@@ -10,7 +10,7 @@ using bank.DAL.DataContext;
 
 namespace bank.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(MyDataContext))]
     [Migration("20230509104021_createUser")]
     partial class createUser
     {
