@@ -9,7 +9,7 @@ using bank.DAL.DataContext;
 
 namespace bank.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(MyDataContext))]
     partial class DataContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
