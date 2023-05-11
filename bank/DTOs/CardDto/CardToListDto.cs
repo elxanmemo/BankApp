@@ -1,6 +1,12 @@
-﻿namespace bank.DTOs.CardDto
+﻿using bank.DTOs.BankDto;
+using bank.Entities;
+
+namespace bank.DTOs.CardDto
 {
-    public class CardToListDto
+    public record CardToListDto
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public BankToAddDto Banks { get; set; }
     }
 }

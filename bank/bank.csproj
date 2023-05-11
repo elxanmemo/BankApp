@@ -19,10 +19,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\CardDto\" />
-    <Folder Include="DTOs\BankDto\" />
-    <Folder Include="DTOs\OrderDto\" />
-  </ItemGroup>
-
 </Project>
