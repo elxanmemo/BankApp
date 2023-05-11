@@ -8,20 +8,26 @@ using bank.Entities;
 
 namespace bank.BLL.Concrete
 {
-    public class UserService : IUserService
+    public class LoginService : ILoginService
     {
         private readonly IMapper _mapper;
-        private readonly IUserRepository _repository;
-        public UserService(IMapper mapper, IUserRepository repository)
+       private readonly ILoginRepository _repository;
+
+        public LoginService(ILoginRepository repository,IMapper mapper)
         {
-            _mapper = mapper;
             _repository = repository;
+            _mapper = mapper;
         }
-        public void Add(UserToAddDto dto)
+        public bool Get(LoginToGetDto dto)
         {
-            User user = _mapper.Map<User>(dto);
-            _repository.Add(user);
+          
+          
+             
+            return _repository.Get(dto);
+
 
         }
+
+       
     }
 }
