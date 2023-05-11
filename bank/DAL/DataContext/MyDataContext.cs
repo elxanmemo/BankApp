@@ -10,5 +10,8 @@ namespace bank.DAL.DataContext
             
         }
      public   DbSet<User> Users { get; set; } 
+        public DbSet<Bank> Banks { get; set; }
+        public DbSet<Card> Cards { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
