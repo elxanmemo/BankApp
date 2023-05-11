@@ -1,6 +1,10 @@
-﻿namespace bank.DAL.Abstract
+﻿using bank.Entities;
+
+namespace bank.DAL.Abstract
 {
-    public class IOrderRepository
+    public interface IOrderRepository
     {
+        public void Add( Order order);
+
     }
 }
